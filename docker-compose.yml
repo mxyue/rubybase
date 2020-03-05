@@ -1,0 +1,9 @@
+version: '3.7'
+
+#host.docker.internal
+services:
+  rubybase:
+    image: rubybase:1.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
