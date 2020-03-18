@@ -29,3 +29,7 @@ ENV LANG en_US.UTF-8
 
 RUN rm -rf /var/www/app
 WORKDIR /root
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN rm /etc/localtime
+RUN ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
